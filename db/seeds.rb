@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+10.times do 
+  d = Section.create(
+    name: Faker::Commerce.product_name
+  )
+end
+puts "10 items seeded"
