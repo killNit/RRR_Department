@@ -7,7 +7,9 @@ import { Container, } from 'react-bootstrap';
 import NavBar from './components/NavBar';
 import Sections from './components/Sections';
 import SectionForm from "./components/SectionForm";
+import Section from './components/Section';
 // import ItemView from './components/ItemView';
+import ItemForm from './components/ItemForm';
 
 const App = () => (
 <>
@@ -16,7 +18,9 @@ const App = () => (
     <Switch>
         <Route exact path='/home' component={Home} />
         <Route exact path='/api/sections' component={Sections} />
-        <Route exact path="/sections/new" component={SectionForm} />
+        <Route exact path="/api/sections/new" component={SectionForm} />
+        <Route exact path="/api/sections_id/items" component={ItemForm} />
+        <Route exact path="/api/sections/:id" component={Section} />
         <Route exact path='/about' component={About} />
         <Route component={NoMatch} />
     </Switch>
