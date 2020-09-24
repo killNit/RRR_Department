@@ -5,9 +5,9 @@ import About from './components/About';
 import NoMatch from './components/NoMatch';
 import { Container, } from 'react-bootstrap';
 import NavBar from './components/NavBar';
-import ItemView from './components/ItemView';
 import Sections from './components/Sections';
 import SectionForm from "./components/SectionForm";
+// import ItemView from './components/ItemView';
 
 const App = () => (
 <>

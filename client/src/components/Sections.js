@@ -8,7 +8,7 @@ const Sections = () => {
   const [sections, setSections] = useState([]);
 
   useEffect( () => {
-    debugger;
+    // debugger;
     axios.get("/api/sections")
     .then((res) => {
       setSections(res.data);

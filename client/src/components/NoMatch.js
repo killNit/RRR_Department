@@ -5,7 +5,7 @@ import { Button } from "react-bootstrap";
 const NoMatch = () => (
   <div>
     <h1>No Content on this page 404; try typing NSFW into Reddit</h1>
-    <Link to="/">
+    <Link to="/home">
       <Button>Back</Button>
     </Link>
   </div>

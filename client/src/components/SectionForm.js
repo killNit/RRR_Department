@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
-import { Form, Header, Button } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
 import axios from 'axios';
 
 const SectionForm = ({history}) => {
   const [name, setName] = useState("");
 
   function handleSubmit(e) {
-    debugger;
+    // debugger;
     axios.post("/api/sections", {name})
     .then((res) => {
       history.push("/sections")

@@ -39,5 +39,4 @@ class Api::SectionsController < ApplicationController
       def section_params
         params.require(:section).permit(:name)
       end
-  end
 end
